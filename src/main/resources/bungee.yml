@@ -1,0 +1,6 @@
+name: PartySystem
+author: SocketConnection
+version: "1.0"
+main: me.mypvp.partyplugin.PartyPlugin
+commands:
+  party:
