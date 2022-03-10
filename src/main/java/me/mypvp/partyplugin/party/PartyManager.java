@@ -2,14 +2,15 @@ package me.mypvp.partyplugin.party;
 
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 
-import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class PartyManager {
 
-    private final ArrayList<Party> parties;
+    private final List<Party> parties;
 
     public PartyManager() {
-        parties = new ArrayList<>();
+        parties = new CopyOnWriteArrayList<>();
     }
 
     public Party createParty(ProxiedPlayer leader) {

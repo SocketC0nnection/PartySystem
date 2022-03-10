@@ -39,7 +39,8 @@ public class Party {
         TextComponent deny = new TextComponent("§c[ABLEHNEN]");
         deny.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/party deny " + player.getName()));
 
-        invitedPlayer.sendMessage(new TextComponent(PartyPlugin.PREFIX + "§7Du wurdest von " + player.getName() + " in eine Party eingeladen!\n" + PartyPlugin.PREFIX + "§7Klicke hier zum: "), accept, new TextComponent(" "), deny);
+        invitedPlayer.sendMessage(new TextComponent(PartyPlugin.PREFIX + "§7Du wurdest von " + player.getName() + " in eine Party eingeladen!\n" +
+                PartyPlugin.PREFIX + "§7Klicke hier zum: "), accept, new TextComponent(" "), deny);
         player.sendMessage(new TextComponent(PartyPlugin.PREFIX + "§aDu hast §7" + invitedPlayer.getName() + " §azu deiner Party eingeladen!"));
     }
 
